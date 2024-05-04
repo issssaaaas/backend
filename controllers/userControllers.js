@@ -31,7 +31,7 @@ const registerUser = async (req, res, next) => {
   } catch (error) {
     return res.status(500).json({ message: "Something went wrong!" });
   }
-};
+
 
 const loginUser = async (req, res, next) => {
   try {
@@ -81,7 +81,7 @@ const userProfile = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-};
+
 
 const updateProfile = async (req, res, next) => {
   try {
